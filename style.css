@@ -370,7 +370,7 @@ br-none-3 {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  background: url(onomichi_mv.png) no-repeat center center;
+  background: url(./onomichi_mv.png) no-repeat center center;
   background-size: cover;
   background-attachment: scroll;
   height: 554px;

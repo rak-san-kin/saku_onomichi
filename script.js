@@ -79,9 +79,9 @@ $(document).ready(function () {
 
     // ボタン画像を切り替え
     if (accordionItem.hasClass("is-open")) {
-      buttonImg.attr("src", "img/frame-49_open.png");
+      buttonImg.attr("src", "frame-49_open.png");
     } else {
-      buttonImg.attr("src", "img/frame-49_close.png");
+      buttonImg.attr("src", "frame-49_close.png");
     }
   });
 
@@ -183,31 +183,31 @@ $(document).ready(function () {
   const prizeData = {
     1: {
       title: "海街洋菓子店スイーツセット",
-      image: "img/Rectangle-1-pc.png",
+      image: "Rectangle-1-pc.png",
       description:
         "尾道の老舗洋菓子店「海街洋菓子店」の人気スイーツをセットにしました。地元で愛される伝統の味をお楽しみください。焼き菓子やケーキなど、厳選されたスイーツが詰まったお得なセットです。",
     },
     2: {
       title: "ねこねこグッズセット",
-      image: "img/Rectangle-2-pc.png",
+      image: "Rectangle-2-pc.png",
       description:
         "尾道といえば猫の街！可愛い猫をモチーフにしたオリジナルグッズセットです。猫好きにはたまらない、キュートなアイテムが盛りだくさん。日常使いから記念品まで、様々なシーンでお楽しみいただけます。",
     },
     3: {
       title: "尾道ラーメンセット",
-      image: "img/Rectangle-3.png",
+      image: "Rectangle-3.png",
       description:
         "尾道の名物「尾道ラーメン」をご自宅でお楽しみいただけるセットです。醤油ベースのあっさりとした味わいに、背脂が特徴的な尾道ラーメンの本格的な味をお届けします。",
     },
     4: {
       title: "おうちで喫茶店セット",
-      image: "img/Rectangle-4.png",
+      image: "Rectangle-4.png",
       description:
         "ご自宅で本格的なカフェ体験をお楽しみいただけるセットです。厳選されたコーヒー豆とお菓子、そして素敵な雑貨が入っています。おうち時間を豊かに彩る特別なひとときをお過ごしください。",
     },
     5: {
       title: "工房尾道帆布オリジナルトート",
-      image: "img/Rectangle-5.png",
+      image: "Rectangle-5.png",
       description:
         "尾道の老舗帆布メーカー「工房尾道帆布」が手がけるオリジナルトートバッグです。丈夫で長持ちする帆布素材を使用し、シンプルながらも上品なデザインに仕上げました。日常使いにぴったりの一品です。",
     },

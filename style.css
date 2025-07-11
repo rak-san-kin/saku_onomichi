@@ -2489,7 +2489,7 @@ br-none-3 {
 
 .onomichi-logo {
   margin-top: 15px;
-  z-index:20;
+  z-index:50;
 }
 @media screen and (min-width:768px) {
   .onomichi-logo {
@@ -2709,7 +2709,7 @@ br-none-3 {
     width: 250px;
     top: -30px;
     left: -353px;
-    z-index: 3;
+    
   }
 }
 

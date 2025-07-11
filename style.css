@@ -634,6 +634,8 @@ br-none-3 {
 .bg__top-img {
   width: 355px;
   padding-top: 110px;
+  position: relative;
+  z-index:10;
 }
 @media screen and (min-width:768px) {
   .bg__top-img {
@@ -2489,8 +2491,7 @@ br-none-3 {
 
 .onomichi-logo {
   margin-top: 15px;
-  position: relative;
-  z-index:10;
+
 
 }
 @media screen and (min-width:768px) {

@@ -109,6 +109,9 @@ body.modal-open {
   display: inline-flex;
   color: #4a3636;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90vw;
 }
 @media screen and (min-width:768px) {
   .button {

@@ -109,10 +109,7 @@ $(document).ready(function () {
 
   // Swiper スライダー機能
   const slider = new Swiper(".slider", {
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // 自動再生は無効
     loop: true,
     slidesPerView: 3,
     spaceBetween: 20,
@@ -172,7 +169,7 @@ $(document).ready(function () {
   });
 
   // Swiper about-slider機能（無限スクロール）
- const aboutSlider = new Swiper(".about-slider", {
+  const aboutSlider = new Swiper(".about-slider", {
     // 自動再生を有効
     autoplay: {
       delay: 0,
@@ -197,6 +194,7 @@ $(document).ready(function () {
       },
     },
   });
+
   // Prize Modal機能
   const prizeData = {
     1: {
@@ -207,7 +205,7 @@ $(document).ready(function () {
     },
     2: {
       title: "ねこねこグッズセット",
-      image: "iRectangle-2-pc.png",
+      image: "Rectangle-2-pc.png",
       description:
         "尾道といえば猫の街！可愛い猫をモチーフにしたオリジナルグッズセットです。猫好きにはたまらない、キュートなアイテムが盛りだくさん。日常使いから記念品まで、様々なシーンでお楽しみいただけます。",
     },

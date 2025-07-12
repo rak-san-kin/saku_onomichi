@@ -107,6 +107,9 @@ body.modal-open {
   padding: 6px 24px 8px 24px;
   justify-content: center;
   align-items: center;
+  display: inline-flex;
+  color: #4a3636;
+  white-space: nowrap;
 }
 @media screen and (min-width:768px) {
   .button {

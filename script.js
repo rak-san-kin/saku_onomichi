@@ -172,7 +172,8 @@ $(document).ready(function () {
   });
 
   // Swiper about-slider機能（無限スクロール）
-  const aboutSlider = new Swiper(".about-slider", {
+ const aboutSlider = new Swiper(".about-slider", {
+    // 自動再生を有効
     autoplay: {
       delay: 0,
       disableOnInteraction: false,

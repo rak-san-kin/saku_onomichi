@@ -1803,6 +1803,7 @@ br-none-3 {
 }
 .spots-slider .swiper-button-next,
 .spots-slider .swiper-button-prev {
+  display: none; 
   width: 60px;
   height: 60px;
   position: absolute;
@@ -1823,6 +1824,7 @@ br-none-3 {
 @media screen and (min-width:768px) {
   .spots-slider .swiper-button-next,
   .spots-slider .swiper-button-prev {
+    display: block; // PCでは表示
     width: 80px;
     height: 80px;
     bottom: -24px;

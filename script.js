@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  // アコーディオンの初期状態を設定
+  $(".accordion-item").each(function () {
+    const accordionItem = $(this);
+    const buttonImg = accordionItem.find(".accordion-button");
+
+    console.log("初期化:", accordionItem.hasClass("is-open"), buttonImg.length);
+
+    if (accordionItem.hasClass("is-open")) {
+      // 開いている状態では閉じるボタンを表示
+      buttonImg.attr("src", "frame-49_close.png");
+      console.log("closeボタンに設定:", buttonImg.attr("src"));
+    } else {
+      // 閉じている状態では開くボタンを表示
+      buttonImg.attr("src", "frame-49_open.png");
+      console.log("openボタンに設定:", buttonImg.attr("src"));
+    }
+  });
+
   // ハンバーガーメニュー機能
   $("#js-drawer-icon").on("click", function (e) {
     e.preventDefault();
@@ -75,13 +93,17 @@ $(document).ready(function () {
     const accordionItem = $(this).closest(".accordion-item");
     const buttonImg = $(this).find(".accordion-button");
 
+    console.log("クリック前:", accordionItem.hasClass("is-open"));
     accordionItem.toggleClass("is-open");
+    console.log("クリック後:", accordionItem.hasClass("is-open"));
 
-    // ボタン画像を切り替え
+    // ボタン画像を切り替え（開いている時は閉じるボタン、閉じている時は開くボタン）
     if (accordionItem.hasClass("is-open")) {
-      buttonImg.attr("src", "frame-49_open.png");
+      buttonImg.attr("src", "frame-49_close.png"); // 開いている時は閉じるボタン
+      console.log("closeボタンに変更:", buttonImg.attr("src"));
     } else {
-      buttonImg.attr("src", "frame-49_close.png");
+      buttonImg.attr("src", "frame-49_open.png"); // 閉じている時は開くボタン
+      console.log("openボタンに変更:", buttonImg.attr("src"));
     }
   });
 
@@ -189,7 +211,7 @@ $(document).ready(function () {
     },
     2: {
       title: "ねこねこグッズセット",
-      image: "Rectangle-2-pc.png",
+      image: "iRectangle-2-pc.png",
       description:
         "尾道といえば猫の街！可愛い猫をモチーフにしたオリジナルグッズセットです。猫好きにはたまらない、キュートなアイテムが盛りだくさん。日常使いから記念品まで、様々なシーンでお楽しみいただけます。",
     },

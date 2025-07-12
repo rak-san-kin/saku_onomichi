@@ -1803,61 +1803,61 @@ br-none-3 {
 
 .spots-slider {
   position: relative;
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 50;
-    background: none;
-    margin-top: 0; // Swiperのデフォルトmargin-topを無効化
-
-    &::after {
-      display: none; // デフォルトの矢印を非表示
-    }
-
-    // カスタムSVGアイコン（黄色い円の背景と矢印）
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60' fill='none'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23FFEE56'/%3E%3Cpath d='M34.8271 36.5362L27.9158 29.625L34.8271 22.7137C35.242 22.2988 35.4719 21.7386 35.4719 21.1544C35.4719 20.5703 35.242 20.01 34.8271 19.5951C34.4123 19.1803 33.852 18.9504 33.2678 18.9504C32.6837 18.9504 32.1234 19.1803 31.7085 19.5951L23.1396 28.1281C22.4699 28.7978 22.4699 29.875 23.1396 30.5447L31.7085 39.0656C32.1233 39.4806 32.6836 39.7106 33.2678 39.7106C33.852 39.7106 34.4123 39.4806 34.8271 39.0656C35.504 38.4209 35.5218 37.2309 34.8271 36.5362Z' fill='%239ED0E0'/%3E%3C/svg%3E") !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @include mq(pc) {
-      width: 80px;
-      height: 80px;
-      bottom: -24px; // spotsセクションの下から24px下に配置
-      top: auto; // スマホのtopを無効化
-      transform: none; // スマホのtransformを無効化
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80' fill='none'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23FFEE56'/%3E%3Cpath d='M46.4361 48.715L37.2211 39.5L46.4361 30.285C46.656 30.0651 46.8304 29.8041 46.9494 29.5168C47.0684 29.2295 47.1296 28.9216 47.1296 28.6106C47.1296 28.2996 47.0684 27.9917 46.9494 27.7044C46.8304 27.4171 46.656 27.1561 46.4361 26.9362C46.2162 26.7163 45.9552 26.5419 45.6679 26.4229C45.3806 26.3039 45.0727 26.2427 44.7617 26.2427C44.4508 26.2427 44.1428 26.3039 43.8555 26.4229C43.5683 26.5419 43.3072 26.7163 43.0873 26.9362L32.1861 37.8375C31.2598 38.7637 31.2598 40.26 32.1861 41.1862L43.0873 52.0875C43.3071 52.3076 43.568 52.4823 43.8554 52.6015C44.1427 52.7207 44.4507 52.782 44.7617 52.782C45.0728 52.782 45.3808 52.7207 45.6681 52.6015C45.9554 52.4823 46.2164 52.3076 46.4361 52.0875C47.3386 51.1612 47.3623 49.6412 46.4361 48.715Z' fill='%239ED0E0'/%3E%3C/svg%3E") !important;
-    }
-  }
-
-  .swiper-button-prev {
-    left: 16px;
-    right: auto;
-
-    @include mq(pc) {
-      left: 50%;
-      margin-left: -600px;
-    }
-  }
-
-  .swiper-button-next {
-    right: 16px;
-    left: auto;
-    transform: translateY(-50%) scaleX(-1);
-
-    @include mq(pc) {
-      left: 50%;
-      margin-left: 250px;
-      right: auto;
-      transform: scaleX(-1);
-    }
+}
+.spots-slider .swiper-button-next,
+.spots-slider .swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  background: none;
+  margin-top: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60' fill='none'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23FFEE56'/%3E%3Cpath d='M34.8271 36.5362L27.9158 29.625L34.8271 22.7137C35.242 22.2988 35.4719 21.7386 35.4719 21.1544C35.4719 20.5703 35.242 20.01 34.8271 19.5951C34.4123 19.1803 33.852 18.9504 33.2678 18.9504C32.6837 18.9504 32.1234 19.1803 31.7085 19.5951L23.1396 28.1281C22.4699 28.7978 22.4699 29.875 23.1396 30.5447L31.7085 39.0656C32.1233 39.4806 32.6836 39.7106 33.2678 39.7106C33.852 39.7106 34.4123 39.4806 34.8271 39.0656C35.504 38.4209 35.5218 37.2309 34.8271 36.5362Z' fill='%239ED0E0'/%3E%3C/svg%3E") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.spots-slider .swiper-button-next::after,
+.spots-slider .swiper-button-prev::after {
+  display: none;
+}
+@media screen and (min-width:768px) {
+  .spots-slider .swiper-button-next,
+  .spots-slider .swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    bottom: -24px;
+    top: auto;
+    transform: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80' fill='none'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23FFEE56'/%3E%3Cpath d='M46.4361 48.715L37.2211 39.5L46.4361 30.285C46.656 30.0651 46.8304 29.8041 46.9494 29.5168C47.0684 29.2295 47.1296 28.9216 47.1296 28.6106C47.1296 28.2996 47.0684 27.9917 46.9494 27.7044C46.8304 27.4171 46.656 27.1561 46.4361 26.9362C46.2162 26.7163 45.9552 26.5419 45.6679 26.4229C45.3806 26.3039 45.0727 26.2427 44.7617 26.2427C44.4508 26.2427 44.1428 26.3039 43.8555 26.4229C43.5683 26.5419 43.3072 26.7163 43.0873 26.9362L32.1861 37.8375C31.2598 38.7637 31.2598 40.26 32.1861 41.1862L43.0873 52.0875C43.3071 52.3076 43.568 52.4823 43.8554 52.6015C44.1427 52.7207 44.4507 52.782 44.7617 52.782C45.0728 52.782 45.3808 52.7207 45.6681 52.6015C45.9554 52.4823 46.2164 52.3076 46.4361 52.0875C47.3386 51.1612 47.3623 49.6412 46.4361 48.715Z' fill='%239ED0E0'/%3E%3C/svg%3E") !important;
   }
 }
+.spots-slider .swiper-button-prev {
+  left: 16px;
+  right: auto;
+}
+@media screen and (min-width:768px) {
+  .spots-slider .swiper-button-prev {
+    left: 50%;
+    margin-left: -600px;
+  }
+}
+.spots-slider .swiper-button-next {
+  right: 16px;
+  left: auto;
+  transform: translateY(-50%) scaleX(-1);
+}
+@media screen and (min-width:768px) {
+  .spots-slider .swiper-button-next {
+    left: 50%;
+    margin-left: 250px;
+    right: auto;
+    transform: scaleX(-1);
+  }
+}
+
 
 .QA {
   padding-top: 77px;

@@ -1628,7 +1628,7 @@ br-none-3 {
   .spots::after {
     height: 120px;
     bottom: -120px;
-    background-image: url(img/img_bg_wave-bottom-pc.svg);
+    background-image: url(img_bg_wave-bottom-pc.svg);
   }
 }
 

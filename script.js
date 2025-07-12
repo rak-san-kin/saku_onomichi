@@ -144,19 +144,15 @@ $(document).ready(function () {
     },
   });
 
-  // Swiper spots-slider機能（連続ループアニメーション）
+  // Swiper spots-slider機能（ループモード）
   const spotsSlider = new Swiper(".spots-slider", {
-    autoplay: {
-      delay: 0, // 連続再生
-      disableOnInteraction: false,
-    },
-    speed: 3000, // アニメーション速度
-    loop: true,
-    loopAdditionalSlides: 10, // ループのための追加スライド数を増加
+    // 自動再生は無効
+    loop: true, // ループモード有効
     slidesPerView: "auto",
     spaceBetween: 32, // 32pxの間隔
     allowTouchMove: true, // タッチ操作を有効
     grabCursor: true, // カーソルを手の形に
+    centeredSlides: false, // 中央揃え無効
     navigation: {
       nextEl: ".spots-slider .swiper-button-next",
       prevEl: ".spots-slider .swiper-button-prev",
@@ -200,7 +196,6 @@ $(document).ready(function () {
       },
     },
   });
-
   // Prize Modal機能
   const prizeData = {
     1: {

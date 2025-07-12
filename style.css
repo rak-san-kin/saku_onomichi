@@ -1905,6 +1905,7 @@ br-none-3 {
   text-align: left;
   line-height: 160%;
   position: relative;
+  color: #4a3636;
 }
 @media screen and (min-width:768px) {
   .accordion-header {
